@@ -1,0 +1,144 @@
+:root {
+    --text-color-primary: #894111;
+    --text-color-second: #212529;
+}
+
+body {
+    background-color: #db9d74;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kreon-Bold', sans-serif;
+}
+
+.header h1 {
+    color: var(--text-color-primary, #894111);
+    text-align: center;
+    font-size: 120px;
+    line-height: 80px;
+    font-weight: 700;
+}
+
+.header h2 {
+    color: var(--text-color-second, #212529);
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 400;
+}
+
+.welcome-title {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    justify-items: center;
+}
+
+.welcome-title__pra {
+    color: var(--text-color-second, #212529);
+    font-size: 30px;
+    line-height: 26.4px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.welcome-title__link {
+    color: var(--text-color-primary, #894111);
+    font-size: 22px;
+    line-height: 26.4px;
+    font-weight: 400;
+    display: flex;
+    gap: 0.5em;
+    justify-items: center;
+    justify-content: center;
+}
+
+.welcome-title__link a {
+    color: var(--text-color-primary, #894111);
+    text-decoration: underline;
+}
+
+/*roadmap css*/
+
+/*legend css*/
+.legend-title {
+    color: var(--text-color-second, #212529);
+    text-align: center;
+    font-size: 80px;
+    line-height: 100px;
+    font-weight: 400;
+}
+
+.legend-image {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    gap: 4em;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.legend-item img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.legend-item__title {
+    color: var(--text-color-second);
+    font-size: 30px;
+    line-height: 26.4px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0.5em 0;
+}
+.holder-title__pra {
+    color: var(--text-color-second, #212529);
+    font-size: 20px;
+    line-height: 26.4px;
+    font-weight: 400;
+}
+.roadmap-img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+@media screen and (max-width: 468px) {
+    /*header css*/
+    .header h1 {
+        font-size: 50px;
+        line-height: 40px;
+    }
+
+    .header h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    /*welcome css*/
+    .welcome-title__pra {
+        font-size: 20px;
+        line-height: 26.4px;
+    }
+
+    /*legend css*/
+    .legend-title {
+        font-size: 50px;
+        line-height: 0px;
+        font-weight: 600;
+    }
+
+    .legend-image {
+        gap: 1em;
+    }
+
+    .legend-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .legend-item__title {
+        font-size: 22px;
+        line-height: 10px;
+    }
+}
