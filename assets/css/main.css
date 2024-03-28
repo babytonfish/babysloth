@@ -9,6 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kreon-Bold', sans-serif;
+    text-align: center;
 }
 
 .header h1 {
@@ -56,6 +57,18 @@ body {
 .welcome-title__link a {
     color: var(--text-color-primary, #894111);
     text-decoration: underline;
+}
+.welcome-bg{
+    display: flex;
+    justify-content: center;
+    margin: 2em 0;
+}
+.welcome-body {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 /*roadmap css*/
